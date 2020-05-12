@@ -9,6 +9,8 @@ resource "aws_ecs_service" "service_with_lb" {
   deployment_maximum_percent = var.service_deployment_maximum_percent
   deployment_minimum_healthy_percent = var.service_deployment_minimum_healthy_percent
 
+  health_check_grace_period_seconds = var.health_check_grace_period
+
   scheduling_strategy = var.scheduling_strategy
 
   dynamic "placement_constraints" {
