@@ -2,7 +2,7 @@
   {
     "name": "${name}",
     "image": "${image}",
-    "memory": 200,
+    "memory": ${memory},
     "essential": true,
     "command": ${command},
     "portMappings": [

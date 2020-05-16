@@ -26,6 +26,22 @@ variable "service_task_network_mode" {
   default = "bridge"
   type = string
 }
+variable "service_task_container_memory" {
+  description = ""
+  default = 200
+  type = number
+}
+variable "service_task_size_cpu" {
+  description = ""
+  default = 0
+  type = number
+}
+variable "service_task_size_memory" {
+  description = ""
+  default = 0
+  type = number
+}
+
 
 variable "service_name" {
   description = "The name of the service being created."
